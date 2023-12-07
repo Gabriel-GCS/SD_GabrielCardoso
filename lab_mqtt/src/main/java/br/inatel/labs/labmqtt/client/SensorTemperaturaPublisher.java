@@ -14,10 +14,11 @@ public class SensorTemperaturaPublisher {
 		IMqttClient publisher = null;
 		
 		try {
+			// Criando o publisher
 			String publisherId = UUID.randomUUID().toString();
 			publisher = new MqttClient(MyConstants.URI_BROKER, publisherId);
 			
-			MqttConnectOptions options = new MqttConnectOptions();
+			MqttConnectOptions options = new MqttConnectOptions(); // conectando
 			options.setAutomaticReconnect(true);
 			options.setCleanSession(true);
 			options.setConnectionTimeout(10);
