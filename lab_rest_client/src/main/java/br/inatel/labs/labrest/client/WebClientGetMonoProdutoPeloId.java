@@ -13,7 +13,7 @@ public class WebClientGetMonoProdutoPeloId {
 		
 		Mono<ProdutoDTO> monoProduto = WebClient.create(Constantes.BASE_URL)
 				.get()
-				.uri("/produto/4")
+				.uri("/produto/3")
 				.retrieve()
 				.bodyToMono(ProdutoDTO.class);
 		

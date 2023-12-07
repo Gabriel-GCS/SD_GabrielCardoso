@@ -10,7 +10,7 @@ public class WebClientPutProduto {
 	public static void main(String[] args) {
 		ProdutoDTO produtoExistente = new ProdutoDTO();
 		produtoExistente.setId(1L);
-		produtoExistente.setDescricao("Furadeira a bateria");
+		produtoExistente.setDescricao("Furadeira teste");
 		
 		ResponseEntity<Void> responseEntity = WebClient.create(Constantes.BASE_URL)
 				.put()

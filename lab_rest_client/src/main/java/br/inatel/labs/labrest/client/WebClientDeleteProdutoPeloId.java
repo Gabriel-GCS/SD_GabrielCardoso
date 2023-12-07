@@ -10,7 +10,7 @@ public class WebClientDeleteProdutoPeloId {
 		try {
 		ResponseEntity<Void> responseEntity = WebClient.create(Constantes.BASE_URL)
 				.delete()
-				.uri("/produto/3")
+				.uri("/produto/1")
 				.retrieve()
 				.toBodilessEntity()
 				.block();
